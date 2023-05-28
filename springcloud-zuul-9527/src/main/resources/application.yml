@@ -1,25 +1,29 @@
-server:
-  port: 9527
+#server:
+#  port: 9527
+#
+#spring:
+#  application:
+#    name: spring-cloud-zuul
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+#  instance:
+#    instance-id: zuul9527.com
+#    prefer-ip-address: true
+#
+#info:
+#  app.name: com.wxr
+#  company.name: 中国石化
+#
+##配置路由和过滤
+#zuul:
+#  routes:
+#    myDept.serviceId: spring-cloud-config-dept
+#    myDept.path: /my.dept/**  #起别名
+#  ignored-services: "*"  #过滤掉真实的服务名称
+#  prefix: /zcm  #设置访问前缀$ git push -f -u origin master
 
 spring:
   application:
-    name: spring-cloud-zuul
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-  instance:
-    instance-id: zuul9527.com
-    prefer-ip-address: true
-
-info:
-  app.name: com.wxr
-  company.name: 中国石化
-
-#配置路由和过滤
-zuul:
-  routes:
-    myDept.serviceId: spring-cloud-config-dept
-    myDept.path: /my.dept/**  #起别名
-  ignored-services: "*"  #过滤掉真实的服务名称
-  prefix: /zcm  #设置访问前缀
+    name: spring-cloud-config-zuul

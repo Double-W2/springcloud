@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+      name: config-zuul
+      label: main
+      uri: http://localhost:3344
