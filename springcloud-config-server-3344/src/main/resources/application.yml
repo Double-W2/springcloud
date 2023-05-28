@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: spring-cloud-config-server
+    # 连接远程仓库
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Double-W2/springcloud-config.git
+          default-label: main

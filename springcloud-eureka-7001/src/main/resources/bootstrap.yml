@@ -1,0 +1,8 @@
+#客户端远程从服务端拿到存储在github上的配置信息
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      label: main
+      name: config-eureka
+      profile: dev
