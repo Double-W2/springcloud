@@ -28,3 +28,8 @@ feign:
     enabled: true
     max-connections: 200
     max-connections-per-route: 50
+
+# 这个是针对单一微服务而言的
+#spring-cloud-config-dept:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
