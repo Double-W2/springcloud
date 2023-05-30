@@ -16,7 +16,7 @@ public class BeanConfig {
     }
     /*配置负载均衡实现RestTemplate*/
 
-    /*修改负载均衡的算法，这是针对任何微服务而言（也可以在配置文件中配置单一微服务的规则）。如果要自定义，就要继承AbstractLoadBalancerRule类，实现里面的方法即可。*/
+    /*修改负载均衡的算法，这是针对任何微服务而言,全局的（也可以在配置文件中配置单一微服务的规则）。如果要自定义，就要继承AbstractLoadBalancerRule类，实现里面的方法即可。*/
     @Bean
     public IRule getRandomRule(){
         return new RandomRule();

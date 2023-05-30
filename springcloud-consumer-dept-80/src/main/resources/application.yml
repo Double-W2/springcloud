@@ -33,3 +33,11 @@ feign:
 #spring-cloud-config-dept:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
+# 配置微服务的饥饿加载，默认情况下是懒加载
+ribbon:
+  eager-load:
+    enabled: true
+    clients:
+      - spring-cloud-config-dept
