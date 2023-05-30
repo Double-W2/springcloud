@@ -16,8 +16,15 @@ spring:
   application:
     name: spring-cloud-consumer
 
+# feign的性能优化
 feign:
+  # 配置日志级别
   client:
     config:
       spring-cloud-config-dept:
         logger-level: basic #总共有四种日志级别 NONE，BASIC，HEADERS，FULL 一般默认的情况下是NONE，性能会很高，要么就是basic。
+  # 配置连接池，feign默认实现的是UrlConnection，不支持连接池。创建连接，断开连接都消耗时间。
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
