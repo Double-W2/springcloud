@@ -15,3 +15,9 @@
 spring:
   application:
     name: spring-cloud-consumer
+
+feign:
+  client:
+    config:
+      spring-cloud-config-dept:
+        logger-level: basic #总共有四种日志级别 NONE，BASIC，HEADERS，FULL
