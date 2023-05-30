@@ -20,4 +20,4 @@ feign:
   client:
     config:
       spring-cloud-config-dept:
-        logger-level: basic #总共有四种日志级别 NONE，BASIC，HEADERS，FULL
+        logger-level: basic #总共有四种日志级别 NONE，BASIC，HEADERS，FULL 一般默认的情况下是NONE，性能会很高，要么就是basic。
